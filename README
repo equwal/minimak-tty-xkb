@@ -1,0 +1,36 @@
+Keyboard layouts for Minimak 4, 8 and 12 on Linux
+
+See minimak.org for details.
+
+TTYs (with .map files) and graphical X keymaps (with .xkb) are supported.
+
+```sh
+# In a TTY
+$ sudo loadkeys minimak12.map
+# In an X session
+$ xkbcomp minimak12.xkb $DISPLAY
+```
+Also a good idea to put these commands in /etc/profile and ~/.xinitrc
+for setting at startup.
+
+Some extra layouts set Caps Lock to ESC, swap [] with (), rctrl as a "compose key", and flip punctuation and numbers.
+
+
+These are the supported layouts as of v1.0, feel free to submit truex ate equwal doot com.
+
+XKB layouts:                | 4 | 8 | 12|
+default                     | v | v | v |
+paren-swap                  | v | v | v |
+flipping                    | x | x | x |
+paren-swap&flip             | v | v | v |
+paren-swap&flip&esc         | x | x | x |
+paren-swap&flip&esc&compose | x | x | v |
+
+map layouts:        | 4 | 8 | 12|
+default             | v | v | v |
+paren-swap          | x | x | x |
+flipping            | x | x | x |
+paren-swap&flip     | x | x | v |
+paren-swap&flip&esc | x | x | v |
+
+Also have a cyrillic set of layouts which keep plain Minimak 4, 8, and 12 phonetically.
